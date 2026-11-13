@@ -231,7 +231,7 @@ class EmulationMemoryBuffer(
             latencyMs = latencyMs,
             status = status,
             timestamp = System.currentTimeMillis(),
-            apduTraceJson = "{"c_apdu":"$cHex","r_apdu":"$rHex","latency_ms":$latencyMs}"
+            apduTraceJson = """{"c_apdu":"$cHex","r_apdu":"$rHex","latency_ms":$latencyMs}"""
         )
 
         if (auditRingBuffer.size >= ringBufferCapacity) {
