@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AegisPass HCE</string>
+    <string name="hce_service_description">AegisPass Zero-Root Virtual Access Card Emulator</string>
+    <string name="aid_group_description">ISO/IEC 7816-4 &amp; ISO-DEP Building Access Profiles</string>
+    <string name="quick_tile_label">Arm AegisPass</string>
+    <string name="shortcut_scan_short">Pindai Kartu</string>
+    <string name="shortcut_scan_long">Pindai Kartu Akses NFC Baru</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="scan_card"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_scan_short"
+        android:shortcutLongLabel="@string/shortcut_scan_long">
+        <intent
+            android:action="com.aegispass.hce.ACTION_SCAN_CARD"
+            android:targetPackage="com.aegispass.hce"
+            android:targetClass="com.aegispass.hce.presentation.MainActivity" />
+    </shortcut>
+</shortcuts>

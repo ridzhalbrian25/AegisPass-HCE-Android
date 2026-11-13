@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_service_description"
+    android:requireDeviceUnlock="false">
+    <!-- Dynamic unlock diverifikasi mandiri via Biometric Gate (Tier 3 BIOMETRIC_STRONG) -->
+
+    <!-- Category OTHER digunakan untuk kartu identifikasi akses umum / private buildings -->
+    <aid-group
+        android:category="other"
+        android:description="@string/aid_group_description">
+
+        <!-- Standard Discovery AID Pointers (ISO 7816-4) & Custom Door Reader Schemes -->
+        <aid-filter android:name="F001020304" />
+        <aid-filter android:name="F0414547495301" />
+        <aid-filter android:name="A0000000031010" />
+        <aid-filter android:name="A0000000041010" />
+        <aid-filter android:name="A0000001510000" />
+        <aid-filter android:name="D2760000850101" /> <!-- NDEF on ISO-DEP -->
+    </aid-group>
+</host-apdu-service>
