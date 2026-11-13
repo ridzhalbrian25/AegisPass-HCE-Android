@@ -26,3 +26,9 @@
 # Keep HostApduService entry point
 -keep class com.aegispass.hce.data.hce.AegisHostApduService { *; }
 -keep class com.aegispass.hce.data.hce.AegisQuickTileService { *; }
+
+# Ignore compile-time only annotations from Google Tink / ErrorProne
+-dontwarn com.google.errorprone.annotations.**
+-dontwarn javax.annotation.**
+-dontwarn org.checkerframework.**
+-dontwarn java.lang.ClassValue
